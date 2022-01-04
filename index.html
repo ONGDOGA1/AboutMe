@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Me</title>
+</head>
+<body>
+<script src="script.js"></script>
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#home">Bao Ly</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#Aboutme" class="zoom">About</a></li>
+                <li><a href="#Footer" class="zoom">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="home" id="home">
+<div style="height: 1000px">
+    <div class="HomeText">
+        <div class="homedes"><span class="stayc">STAY</span> <br> HUNGRY <br> <span class="stayc">STAY</span> <br> FOOLISH</div>
+    </div>
+</div>
+<section id="Aboutme" >
+    <div class="avatar"><img src="istockphoto-1227017838-170667a.jpg" alt="avatar" id="avatar"></div>
+    <div class="descripton">
+        <div class="myname">Trần Hoàng Bảo Ly</div>
+        <div class="fullinfor"> 
+            <div class="firstin">
+                <div class="felement">Date of birth:</div>
+                <div class="felement">University:</div>
+                <div class="felement">Learning:</div>
+            </div>
+            <div class="secondin">
+                <div class="selement">01/08/2003</div>
+                <div class="selement">Freshman at University of Information Technology</div>
+                <div class="selement">C++, C#, Python, HTML, CSS, JS</div>
+            </div>
+        </div>
+        <div class="information">I am currently a student. and I study every day to practice skills and develop myself further, to strive for my own dream. Thank you for visiting my page. Love</div>
+    </div>
+    <button class="custom-btn btn-5 zoom"><span>Read More</span></button>
+</section>
+<section id="Footer">
+    <div class="contact">Contact</div>
+    <div class="iconcontener">
+        <div class="iconcon"><a href="https://www.facebook.com/ly7733/" class="linkicon"><i class="fab fa-facebook zoom"></i></a></div>
+        <div class="iconcon"><a href="https://github.com/ONGDOGA1?tab=repositories" class="linkicon"><i class="fab fa-github zoom"></i></a></div>
+        <div class="iconcon"><a href="https://discord.gg/g2yXVVYN" class="linkicon"><i class="fab fa-discord zoom"></i></a></div>
+        <div class="iconcon"><a href="https://www.linkedin.com/in/b%E1%BA%A3o-ly-tr%E1%BA%A7n-ho%C3%A0ng-252739229/" class="linkicon"><i class="fab fa-linkedin-in zoom"></i></a></div>
+    </div>
+</section>
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://kit.fontawesome.com/81d0d00b4b.js" crossorigin="anonymous"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+</body>
+</html>
